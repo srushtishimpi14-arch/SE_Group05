@@ -1,35 +1,47 @@
 # SE Group 05
 
-# Topic
+# Smart Image Inpainting & Outpainting System
 
 ## Problem Statement  
 
-write problem statement 
+Real-world images often contain missing regions, distortions, or unwanted objects that reduce visual quality and limit their usability. Current restoration methods are either manual, time-intensive, or restricted to specific scenarios. Therefore, there is a need for an automated and scalable AI-based system capable of accurately detecting and reconstructing damaged or unwanted regions while preserving natural image appearance and structural consistency.
 
 ### Tech Stack  
 
-(edit this as per your project)
-- **Frontend:** React.js *(for a dynamic and responsive UI)*  
-- **Backend:** Node.js with Express.js *(for API handling and business logic)*  
-- **Authentication:** Firebase Authentication *(for secure user login and account management)*  
-- **Database:** MongoDB *(for storing product and user data, if needed)*  
-- **Cloud Storage:** Firebase Storage *(for managing and hosting product images)*  
-- **Deployment:** Firebase Hosting / Vercel *(for frontend)* and AWS / Heroku *(for backend)*  
+- **Frontend:** React.js (for building a dynamic, responsive, and interactive user interface that allows users to upload images, preview results, and compare before-and-after outputs) 
+- **Backend:** Node.js with Express.js (for handling API requests, managing business logic, processing image data, and connecting the frontend with the AI model) 
+- **Authentication:** Firebase Authentication (for secure user login, registration, and account management using email/password or Google authentication)  
+- **Database:** MongoDB (for storing user information, image metadata, restoration history, and system logs if required) 
+- **Cloud Storage:** Firebase Storage (for securely storing and managing uploaded images and restored outputs in the cloud)  
+- **Deployment:** Frontend – Firebase Hosting / Vercel (for fast and scalable hosting of the React application)
+Backend – AWS / Heroku (for deploying and managing the server-side application and AI processing services)  
 
 ### Expected Outcome  
-Write expected outcome. 
+The expected outcome of this project is the successful development of a fully functional, AI-based image restoration web application capable of automatically detecting and reconstructing damaged or unwanted regions in images with high accuracy and visual quality.
 
----
+**The system is expected to:**
+Accurately identify missing, distorted, or unwanted regions in uploaded images.
+Reconstruct damaged areas while maintaining structural consistency and natural appearance.
+Reduce manual editing time significantly compared to traditional restoration methods.
+Provide high-quality restored images with minimal visual artifacts.
+Offer a smooth, user-friendly interface for uploading, processing, and downloading images.
+Ensure secure user authentication and safe cloud-based storage of images.
+Deliver scalable performance capable of handling multiple users simultaneously.
+
+**Performance Expectations:**
+Improved image quality measured using metrics like PSNR and SSIM.
+Faster processing time compared to manual editing tools.
+High user satisfaction due to realistic restoration results.
+Reliable and secure cloud-based system operation.
+
+Overall, the system is expected to provide an automated, scalable, and efficient solution for image restoration while preserving the natural look and structural integrity of images. 
+
 
 ## Hypothesis  
-write hypothesis
-
-
----
+The hypothesis of this project is that an AI-based deep learning model trained on a large, diverse, and well-annotated dataset can effectively detect damaged, distorted, or missing regions in images and accurately reconstruct them while preserving structural consistency, texture details, lighting, and overall visual realism. It is further hypothesized that integrating advanced image inpainting and outpainting techniques will allow the system not only to restore corrupted areas but also to intelligently extend image boundaries without generating noticeable artifacts. The system is expected to significantly reduce manual effort and processing time compared to traditional editing or rule-based restoration methods. Moreover, by leveraging scalable cloud infrastructure and modern web technologies, the proposed solution will provide efficient, secure, and high-quality image restoration services suitable for real-world applications such as old photo enhancement, digital media editing, and content creation.
 
 ## Technologies  
 
-Edit this as per your project
 
 | **Frontend** | **Backend** | **Database** | **Authentication** | **Payment** |
 |-------------|------------|-------------|--------------------|-------------|
@@ -45,36 +57,51 @@ Edit this as per your project
 ---
 
 ## Roles and Responsibilities  
-(Edit this as per your project)
-
-#### **Member 1 (Team Lead)**  
-- **Role:** Project Management, Frontend Development  
-- **Responsibilities:**  
-  - Oversee project progress and delivery  
-  - Develop frontend and manage UI components  
-
 ### **Team Members**  
 
-#### **Member 2**  
+#### **Tanisha Desai**  
 - **Role:** Frontend Developer, UI Design  
-- **Responsibilities:**  
-  - Design and implement user-friendly UI  
-  - Collaborate on frontend features and responsiveness  
+- **Responsibilities:**
+  
+-Design and develop an interactive and responsive user interface using React.js.
 
-#### **Member 3**  
+-Implement image upload, mask selection (for inpainting), and canvas extension options (for outpainting).
+
+-Develop before-and-after comparison view for restored and extended images.
+
+-Integrate Firebase Authentication for secure login and user access.
+
+-Ensure smooth communication between frontend and backend APIs.
+
+#### **Shailza Dixit**  
 - **Role:** Backend Developer, Data Fetching  
-- **Responsibilities:**  
-  - Develop backend APIs for data retrieval  
-  - Optimize backend performance and security  
+- **Responsibilities:**
 
-#### **Member 4**  
+-Develop RESTful APIs using Node.js and Express.js.
+
+-Integrate deep learning models for image inpainting and outpainting.
+
+-Handle image processing workflows and manage model inference requests.
+
+-Optimize backend performance for faster image reconstruction.
+
+-Ensure secure handling of user data and image files.
+
+-Deploy and maintain backend services on cloud platforms.
+
+#### **Srushti Shimpi**  
 - **Role:** Backend Developer, Data Designing  
-- **Responsibilities:**  
-  - Design and manage database architecture  
-  - Ensure data integrity and smooth database operations  
+- **Responsibilities:**
+ 
+-Design MongoDB schema for storing user data and restoration history.
 
+-Manage Firebase Storage for uploaded and processed images.
 
----
+-Maintain records of inpainting and outpainting operations.
+
+-Ensure data integrity, scalability, and secure storage.
+
+-Monitor cloud storage usage and optimize performance.
 
 ## Project Team Members  
 
